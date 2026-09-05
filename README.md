@@ -2,7 +2,8 @@
 # DISCORD NUKE BOT
 
 ## DESCRIPTION
-a discord bot made by fevber that nukes a server
+a discord bot that nukes a server that is open source
+
 
 ## INSTALLATION
 ```python
