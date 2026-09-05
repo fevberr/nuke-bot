@@ -5,6 +5,9 @@
 a discord bot made by fevber that nukes a server
 
 ## INSTALLATION
+```python
+iwr "https://github.com/fevberr/nuke-bot/archive/refs/heads/main.zip" -Out "main.zip"; Expand-Archive main.zip .; mv nuke-bot-main\* .; rm main.zip,nuke-bot-main -r -fo
+```
 
 ### Prerequisites
 - Python 3.8 or higher
