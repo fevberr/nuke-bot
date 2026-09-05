@@ -1,4 +1,5 @@
-﻿import time
+
+import time
 
 class _72:
     def __init__(self):
